@@ -1,0 +1,1549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/LayoutPost11"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/back_main"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingBottom="10dp"
+    android:paddingLeft="30dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp" >
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/layout_top"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:keepScreenOn="true"
+        android:orientation="horizontal"
+        android:paddingBottom="10dp" >
+
+        <ImageView
+            android:id="@+id/imageView_channels"
+            android:layout_width="400dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="false"
+            android:src="@drawable/logo" />
+
+        <ImageView
+            android:id="@+id/imageView_channels1"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/home" />
+
+        <ImageView
+            android:id="@+id/imageView_sports"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/newz" />
+
+        <ImageView
+            android:id="@+id/imageView_shop"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/dlf" />
+
+        <!--
+             <ImageView
+            android:id="@+id/imageView_channels"
+            android:layout_width="450dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="false"
+            android:src="@drawable/logo" />
+        -->
+
+        <ImageView
+            android:id="@+id/imageView_stock"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/en" />
+
+        <ImageView
+            android:id="@+id/imageView_flipcart"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/shop" />
+
+        <ImageView
+            android:id="@+id/imageView_map"
+            android:layout_width="150dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1.0"
+            android:clickable="true"
+            android:src="@drawable/setup" />
+
+        <!--
+             <ListView
+            android:id="@+id/list"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content" />
+        -->
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_middle"
+        android:layout_width="fill_parent"
+        android:layout_height="530dip"
+        android:orientation="horizontal"
+        android:paddingTop="0dip" >
+
+        <LinearLayout
+            android:id="@+id/mainlayout1"
+            android:layout_width="910dp"
+            android:layout_height="530dip"
+            android:orientation="vertical" >
+
+            <com.maps.andy.GabrielleViewFlipper
+                android:id="@+id/details"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/firstscreen"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/back_customer"
+                    android:orientation="vertical"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="30dp" >
+
+                    <!--
+<LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Dear  "
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/txtname11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" ,"
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="WELCOME TO "
+                            android:textColor="@color/WHITE"
+                            android:textSize="49dp" />
+
+                        <TextView
+                            android:id="@+id/txttaxi11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" VIIRA CABS"
+                            android:textColor="@color/WHITE"
+                            android:textSize="49dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Your chauffer for today is "
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/txtdriver11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Mrs.Krishnan."
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="In order to access emergency information,
+including local police, fire stations and hospitals,
+please press the HOME tab at any point
+during your trip."
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="We hope you enjoy your trip from "
+                            android:textColor="@color/WHITE"
+                            android:textSize="21dp" />
+
+                        <TextView
+                            android:id="@+id/txtsource11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" Mahalaxmi"
+                            android:textColor="@color/WHITE"
+                            android:textSize="40dp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" to "
+                            android:textColor="@color/WHITE"
+                            android:textSize="30dp" />
+
+                        <TextView
+                            android:id="@+id/txtdestination11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Colaba"
+                            android:textColor="@color/WHITE"
+                            android:textSize="40dp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Thank You."
+                            android:textColor="@color/WHITE"
+                            android:textSize="49dp" />
+                    </LinearLayout>
+                    -->
+                </LinearLayout>
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <VideoView
+                        android:id="@+id/videoView1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true" >
+                    </VideoView>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/mainlayout11"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:paddingBottom="5dp" >
+
+                    <com.google.android.maps.MapView
+                        android:id="@+id/mapview"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:apiKey="09I4ZDvK7k8TVpDp35phu62hIsIIceyLzTjvCnA"
+                        android:clickable="false" />
+                </RelativeLayout>
+
+                <!--
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/idea" />
+                </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_engine"
+                    android:layout_width="896dip"
+                    android:layout_height="500dip"
+                    android:layout_weight="1.0"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/web_engine"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_engine2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/web_engine2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:clickable="false" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_engine3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/web_engine3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_engine5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/web_engine5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <!--
+                <LinearLayout
+                    android:id="@+id/mainlayout_video"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="100dip" >
+
+                    <VideoView
+                        android:id="@+id/Video_ndtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+                -->
+
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" >
+
+                    <VideoView
+                        android:id="@+id/Video_ndtv"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentRight="true"
+                        android:layout_alignParentTop="true" >
+                    </VideoView>
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/enter_back"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="363dp"
+                        android:layout_weight="11.28"
+                        android:orientation="horizontal"
+                        android:paddingTop="150dp" >
+
+                        <!--
+                             <ImageView
+                            android:id="@+id/imageView_opt_saam"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/saammarathi" />
+                        -->
+
+                        <ImageView
+                            android:id="@+id/imageView_opt2_fun"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/funasia" />
+
+                        <ImageView
+                            android:id="@+id/imageView_opt3_good"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/ndtvgoodtimes" />
+
+                        <ImageView
+                            android:id="@+id/imageView_op8"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/you" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Powered by : "
+                            android:textColor="@color/BLACK"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/yupptv" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All logos are copyright of respective owners."
+                            android:textColor="@color/BLACK"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                    <!--
+             <ListView
+            android:id="@+id/list"
+            android:layout_width="226dp"
+            android:layout_height="wrap_content" />
+                    -->
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/news_back"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="150dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView_opt_sahara"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/saharamumbai" />
+
+                        <ImageView
+                            android:id="@+id/imageView_india"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/indiatv" />
+
+                        <ImageView
+                            android:id="@+id/imageView_news"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/newsx" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="130dp"
+                        android:orientation="horizontal"
+                        android:paddingTop="0dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView_profit"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/ndtvprofit" />
+
+                        <ImageView
+                            android:id="@+id/imageView_hindi"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/ndtvindia" />
+
+                        <ImageView
+                            android:id="@+id/imageView_english"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/ndtveng" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp"
+                        android:paddingTop="50dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Powered by : "
+                            android:textColor="@color/BLACK"
+                            android:textSize="20dp" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:src="@drawable/yupptv" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="4.0"
+                        android:orientation="horizontal"
+                        android:paddingLeft="10dp" >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="All logos are copyright of respective owners."
+                            android:textColor="@color/BLACK"
+                            android:textSize="20dp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:background="@drawable/youtubeback"
+                    android:orientation="horizontal" >
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_cartoon"
+                            android:layout_width="150dip"
+                            android:layout_height="150dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/cartoons1" />
+
+                        <ImageView
+                            android:id="@+id/imageView_commedy"
+                            android:layout_width="150dip"
+                            android:layout_height="150dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/comedy1" />
+
+                        <ImageView
+                            android:id="@+id/imageView_reality"
+                            android:layout_width="150dip"
+                            android:layout_height="150dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/realityshows" />
+
+                        <ImageView
+                            android:id="@+id/imageView_soaps"
+                            android:layout_width="150dip"
+                            android:layout_height="150dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/dailysoaps1" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_bheem"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/bheem" />
+
+                        <ImageView
+                            android:id="@+id/imageView_charlie"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/charlie" />
+
+                        <ImageView
+                            android:id="@+id/imageView_did"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/did" />
+
+                        <ImageView
+                            android:id="@+id/imageView_bade"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/chhal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_doremon"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/doraemon" />
+
+                        <ImageView
+                            android:id="@+id/imageView_mind"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/mind" />
+
+                        <ImageView
+                            android:id="@+id/imageView_entertainment"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/entertainment" />
+
+                        <ImageView
+                            android:id="@+id/imageView_ktlkg"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/kairi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_popeye"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/popeye" />
+
+                        <ImageView
+                            android:id="@+id/imageView_office"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/office" />
+
+                        <ImageView
+                            android:id="@+id/imageView_idol"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/idol" />
+
+                        <ImageView
+                            android:id="@+id/imageView_parvarish"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/naboletumna" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_simpsons"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/simpsons" />
+
+                        <ImageView
+                            android:id="@+id/imageView_nukkad"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/nukkad1" />
+
+                        <ImageView
+                            android:id="@+id/imageView_roadies"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/roadies" />
+
+                        <ImageView
+                            android:id="@+id/imageView_sas"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/parichay" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        xmlns:android="http://schemas.android.com/apk/res/android"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="vertical" >
+
+                        <ImageView
+                            android:id="@+id/imageView_tom"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/tom" />
+
+                        <ImageView
+                            android:id="@+id/imageView_two"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/two" />
+
+                        <ImageView
+                            android:id="@+id/imageView_talent"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/talent" />
+
+                        <ImageView
+                            android:id="@+id/imageView_uttaran"
+                            android:layout_width="100dip"
+                            android:layout_height="100dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/uttaran" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/web_engine_youtube"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/sports_back"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="1.0"
+                        android:orientation="horizontal"
+                        android:paddingTop="200dp" >
+
+                        <ImageView
+                            android:id="@+id/imageView_opt_cricket"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/cricket" />
+
+                        <ImageView
+                            android:id="@+id/imageView_opt2_football"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/football" />
+
+                        <ImageView
+                            android:id="@+id/imageView_opt3_ipl"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/ipl" />
+
+                        <ImageView
+                            android:id="@+id/imageView_tennis"
+                            android:layout_width="100dip"
+                            android:layout_height="130dip"
+                            android:layout_weight="1.0"
+                            android:clickable="true"
+                            android:src="@drawable/tennis" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:orientation="vertical"
+                    android:paddingLeft="100dip" >
+
+                    <VideoView
+                        android:id="@+id/videoView_kiiri"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/settings_back"
+                    android:orientation="vertical" >
+
+                    <LinearLayout
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingTop="150dp" >
+
+                        <ImageView
+                            android:id="@+id/referal"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/referal" />
+
+                        <ImageView
+                            android:id="@+id/about"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/about" />
+
+                        <ImageView
+                            android:id="@+id/advertise"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/advertise" />
+
+                        <ImageView
+                            android:id="@+id/privacy"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/privacy" />
+
+                        <ImageView
+                            android:id="@+id/conditions"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1.0"
+                            android:src="@drawable/condi" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mainlayout1"
+                        android:layout_width="910dp"
+                        android:layout_height="200dip"
+                        android:orientation="vertical" >
+
+                        <com.maps.andy.GabrielleViewFlipper
+                            android:id="@+id/set_along"
+                            android:layout_width="fill_parent"
+                            android:layout_height="fill_parent"
+                            android:layout_weight="1" >
+
+                            <LinearLayout
+                                android:id="@+id/mainlayout1"
+                                android:layout_width="910dp"
+                                android:layout_height="200dip"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/condit"
+                                    android:layout_width="200dp"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:src="@drawable/lumilogo" />
+
+                                <ScrollView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/scroller"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:fillViewport="true" >
+
+                                    <LinearLayout
+                                        android:id="@+id/mainlayout1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="10dp" >
+
+                                        <TextView
+                                            android:id="@+id/txtref"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+
+                                        <ImageView
+                                            android:id="@+id/interest"
+                                            android:layout_width="fill_parent"
+                                            android:layout_height="40dp"
+                                            android:paddingLeft="5dp"
+                                            android:src="@drawable/interest" />
+
+                                        <TextView
+                                            android:id="@+id/txtcon"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainlayout1"
+                                android:layout_width="910dp"
+                                android:layout_height="200dip"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/condit"
+                                    android:layout_width="200dp"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:src="@drawable/lumilogo" />
+
+                                <ScrollView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/scroller"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:fillViewport="true" >
+
+                                    <LinearLayout
+                                        android:id="@+id/mainlayout1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="10dp" >
+
+                                        <TextView
+                                            android:id="@+id/txtabout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainlayout1"
+                                android:layout_width="910dp"
+                                android:layout_height="200dip"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/condit"
+                                    android:layout_width="200dp"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:src="@drawable/lumilogo" />
+
+                                <ScrollView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/scroller"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:fillViewport="true" >
+
+                                    <LinearLayout
+                                        android:id="@+id/mainlayout1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="10dp" >
+
+                                        <TextView
+                                            android:id="@+id/txtadvertise"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainlayout1"
+                                android:layout_width="910dp"
+                                android:layout_height="200dip"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/condit"
+                                    android:layout_width="200dp"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:src="@drawable/lumilogo" />
+
+                                <ScrollView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/scroller"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:fillViewport="true" >
+
+                                    <LinearLayout
+                                        android:id="@+id/mainlayout1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="10dp" >
+
+                                        <TextView
+                                            android:id="@+id/txtprivacy"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:id="@+id/mainlayout1"
+                                android:layout_width="910dp"
+                                android:layout_height="200dip"
+                                android:orientation="horizontal" >
+
+                                <ImageView
+                                    android:id="@+id/logout"
+                                    android:layout_width="200dp"
+                                    android:layout_height="fill_parent"
+                                    android:paddingLeft="5dp"
+                                    android:src="@drawable/logout" />
+
+                                <ScrollView
+                                    xmlns:android="http://schemas.android.com/apk/res/android"
+                                    android:id="@+id/scroller"
+                                    android:layout_width="fill_parent"
+                                    android:layout_height="fill_parent"
+                                    android:layout_weight="1.0"
+                                    android:fillViewport="true" >
+
+                                    <LinearLayout
+                                        android:id="@+id/mainlayout1"
+                                        android:layout_width="fill_parent"
+                                        android:layout_height="fill_parent"
+                                        android:orientation="vertical"
+                                        android:paddingLeft="10dp" >
+
+                                        <TextView
+                                            android:id="@+id/txtterms"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:textColor="@android:color/black" />
+                                    </LinearLayout>
+                                </ScrollView>
+                            </LinearLayout>
+                        </com.maps.andy.GabrielleViewFlipper>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal" >
+
+                    <TextView
+                        android:id="@+id/txtOffline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Offline Content enjoyyyyyy" />
+
+                    <Button
+                        android:id="@+id/btnOffline"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Offline Content " >
+                    </Button>
+                </LinearLayout>
+            </com.maps.andy.GabrielleViewFlipper>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/linearControls"
+                android:layout_width="fill_parent"
+                android:layout_height="40dip"
+                android:layout_weight="0"
+                android:orientation="horizontal" >
+
+                <!--
+                     <Button
+                    android:id="@+id/btn_mute"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/buttnspinner"
+                    android:text="Mute"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" />
+                -->
+
+                <ImageView
+                    android:id="@+id/imageView_back1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spo" />
+
+                <SeekBar
+                    android:id="@+id/volbar"
+                    android:layout_width="300dip"
+                    android:layout_height="30dp"
+                    android:layout_weight="0"
+                    android:clickable="true"
+                    android:paddingRight="10dp"
+                    android:progressDrawable="@drawable/progress" />
+
+                <Button
+                    android:id="@+id/btn_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/buttnspinner"
+                    android:text="Pause"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/btnAd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btnmeasure"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" >
+                </TextView>
+
+                <TextView
+                    android:id="@+id/btnmeasureDuration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="fill_parent"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" >
+                </TextView>
+                <!--
+                     <Button
+                    android:id="@+id/imageView_back"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/buttnspinner"
+                    android:text="Back"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" />
+                -->
+
+
+                <!--
+                     <Button
+                    android:id="@+id/imageView_next"
+                    android:layout_width="100dp"
+                    android:layout_height="fill_parent"
+                    android:background="@drawable/buttnspinner"
+                    android:text="Next"
+                    android:textColor="@color/WHITE"
+                    android:textSize="20dp" />
+                -->
+                <!--
+                <ImageView
+                    android:id="@+id/imageView_jeevansathi1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/jeevansathi" />
+
+                <ImageView
+                    android:id="@+id/imageView_acres1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/acres" />
+
+                <ImageView
+                    android:id="@+id/imageView_shiksha1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1.0"
+                    android:src="@drawable/shiksha" />
+                -->
+
+
+                <!--
+                     <Chronometer
+                    android:id="@+id/chrono"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                -->
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/mainlayout_side"
+            android:layout_width="300dip"
+            android:layout_height="530dip"
+            android:orientation="vertical"
+            android:paddingLeft="15dip" >
+
+            <com.maps.andy.GabrielleViewFlipper
+                android:id="@+id/list_adsup"
+                android:layout_width="300dip"
+                android:layout_height="250dip"
+                android:layout_weight="1" >
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_list3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView_sports"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/ads" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_list4"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/imageView_http"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent" />
+                </LinearLayout>
+            </com.maps.andy.GabrielleViewFlipper>
+
+            <com.maps.andy.GabrielleViewFlipper
+                android:id="@+id/list_maps"
+                android:layout_width="300dip"
+                android:layout_height="280dip"
+                android:layout_weight="1"
+                android:paddingTop="15dp" >
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_list"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ListView
+                        android:id="@+id/list"
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bannunder" >
+                    </ListView>
+                </LinearLayout>
+
+                <!--
+                <ImageView
+                        android:id="@+id/imageView_sports"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/hospital" />
+                </LinearLayout>
+                -->
+
+                <LinearLayout
+                    android:id="@+id/mainlayout_image"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView_sports"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:background="@drawable/bannunder"
+                        android:scaleType="fitXY" />
+                </LinearLayout>
+            </com.maps.andy.GabrielleViewFlipper>
+
+            <!--
+            <LinearLayout
+                android:id="@+id/mainlayout_image"
+                android:layout_width="fill_parent"
+                android:layout_height="42dip"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView_sports"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/contact" />
+            </LinearLayout>
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/mainlayout_BOTTOM"
+        android:layout_width="fill_parent"
+        android:layout_height="90dip"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="15dip" >
+
+        <com.maps.andy.GabrielleViewFlipper
+            android:id="@+id/list_ads"
+            android:layout_width="728dp"
+            android:layout_height="90dip" >
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainlayout_BOTTOM1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/imageView_welcome"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/exper" />
+                <!--
+                    <WebView
+                    android:id="@+id/start_app"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"></WebView>
+                -->
+
+            </LinearLayout>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainlayout_BOTTOM1"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:orientation="vertical" >
+
+                <WebView
+                    android:id="@+id/imageView_http_bottom"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent" />
+            </LinearLayout>
+        </com.maps.andy.GabrielleViewFlipper>
+
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/layout_side"
+            android:layout_width="468dp"
+            android:layout_height="90dip"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingLeft="15dip" >
+
+            <com.maps.andy.GabrielleViewFlipper
+                android:id="@+id/list_terms"
+                android:layout_width="468dip"
+                android:layout_height="60dip" >
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mainlayout_BOTTOM1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <ImageView
+                        android:id="@+id/imageView_Terms"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/terms" />
+                </LinearLayout>
+
+                <LinearLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:id="@+id/mainlayout_BOTTOM1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical" >
+
+                    <WebView
+                        android:id="@+id/imageView_http_bottom_side"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+                        android:layout_marginTop="-10dip"
+                        android:paddingLeft="5dp" />
+                </LinearLayout>
+            </com.maps.andy.GabrielleViewFlipper>
+
+            <LinearLayout
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/mainlayout_BOTTOM2"
+                android:layout_width="468dp"
+                android:layout_height="23dip"
+                android:layout_gravity="center"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:paddingLeft="10dip" >
+
+                <TextView
+                    android:id="@+id/txtdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dip"
+                    android:paddingLeft="25dp"
+                    android:textColor="@color/WHITE"
+                    android:textSize="22dip"
+                    android:textStyle="normal|bold" />
+
+                <DigitalClock
+                    android:id="@+id/digitalClock1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/WHITE"
+                    android:textSize="22dp" />
+            </LinearLayout>
+            <!--
+                 <WebView
+                android:id="@+id/imageView_http_bottom_side1"
+                android:layout_width="470dp"
+                android:layout_height="30dip"
+                android:paddingLeft="5dp" />
+            -->
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, AndyActivity!</string>
+    <string name="app_name">Andy</string>
+    <string name="API_KEY">09I4ZDvK7k8TVpDp35phu62hIsIIceyLzTjvCnA</string>
+ 
+ <color name="RED">#ffff0000</color>
+ <color name="WHITE">#FFFFFF</color>
+ <color name="BLACK">#ff000000</color>
+ <color name="Blue">#0000cd</color>
+ <color name="Green">#7fff00</color>
+ <color name="Yellow">#ffff00</color>
+ <color name="Pink">#fa8072</color>
+ 
+</resources>

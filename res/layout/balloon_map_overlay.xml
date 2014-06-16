@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/balloon_main_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/balloon_overlay_bg_selector"
+    android:minWidth="200dip"
+    android:orientation="vertical"
+    android:paddingBottom="35dip"
+    android:paddingLeft="10dip"
+    android:paddingRight="0dip"
+    android:paddingTop="0dip" >
+
+    <LinearLayout
+        android:id="@+id/balloon_inner_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:paddingTop="10dip" >
+
+        <ImageView
+            android:id="@+id/close_img_button1"
+            android:layout_width="66dp"
+            android:layout_height="57dp"
+            android:src="@drawable/dominoz" >
+        </ImageView>
+
+        <TextView
+            android:id="@+id/balloon_item_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Dominoz "
+            android:textColor="#FF000000"
+            android:textSize="20dip" >
+        </TextView>
+
+        <ImageView
+            android:id="@+id/close_img_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dip"
+            android:paddingLeft="50dip"
+            android:paddingRight="8dip"
+            android:paddingTop="4dip"
+            android:src="@drawable/balloon_overlay_close" >
+        </ImageView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/balloon_item_snippet"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="    Address: Oberio Building,
+			Shop no:99,Parel."
+            android:textSize="12dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/balloon_item_video"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="1 Watch Video"
+            android:textSize="14dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/balloon_item_call"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="2 Call Now"
+            android:textSize="14dip" >
+        </TextView>
+
+        <TextView
+            android:id="@+id/balloon_item_order"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="3 Place an order"
+            android:textSize="14dip" >
+        </TextView>
+    </LinearLayout>
+
+</LinearLayout>

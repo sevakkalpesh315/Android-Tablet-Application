@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:id="@+id/screen"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <com.google.android.maps.MapView android:id="@+id/map"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:clickable="true"
+    android:enabled="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:apiKey="09I4ZDvK7k8TVpDp35phu62hIsIIceyLzTjvCnA"/>
+    <!-- corresponding certificate md5: 81:DF:A2:63:53:C7:6B:1E:6C:24:62:D4:91:1C:36:3A -->
+  <LinearLayout android:id="@+id/messagepane"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+   
+    android:layout_weight="0"
+    android:padding="3dip"
+    android:visibility="gone">
+    <TextView android:id="@+id/messagetext"
+      android:layout_width="fill_parent"
+      android:layout_height="wrap_content"
+      android:textSize="16dip"
+      android:textColor="#fff"
+      android:text="wait_for_fix"
+      android:layout_weight="0"/>
+    </LinearLayout>
+    <LinearLayout android:id="@+id/busypane"
+      android:orientation="vertical"
+      android:layout_width="fill_parent"
+      android:layout_height="fill_parent"
+      android:layout_weight="0"
+      android:padding="3dip"
+      android:visibility="gone">
+      <ProgressBar
+        android:layout_weight="1"
+        android:layout_height="0dip"
+        android:layout_width="wrap_content"
+        android:maxWidth="80dip"
+        android:maxHeight="80dip"
+        android:minWidth="80dip"
+        android:minHeight="80dip"
+        android:layout_gravity="center"/>
+    </LinearLayout>
+    
+</RelativeLayout>
+
